@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --Colorh1: #555;
+    --Colorh2: #555;
+    --ColorTextoBoton:rgb(104, 67, 0);
+    --ColorFondo: rgb(255, 255, 255);
+    --paddingsecciones: 60px 0;
+    --marginelementos: 40px;
+
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingsecciones);
+}
+
+/* CSS de Menu */
+
+.menu_navegacion {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.menu_navegacion a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo img{
+    display: block;
+    height: 100%;
+}
+
+.enlaces li {
+    list-style: none;
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: var(--ColorTextoBoton);
+    padding-left: 20px;
+}
+
+
+/* Hero */
+
+.hero {
+    height: 500px;
+    background-image: url(./imagenes/img_horizontal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contenedor-texto {
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero P {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.boton {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: wheat;
+    color: var(--ColorTextoBoton);
+    border-radius: 10px;
+    text-decoration: none;
+    
+
+}
+
+.boton:hover {
+    background-color: burlywood;
+}
+
+/* Main */
+
+.titulo-section {
+    text-align: center;
+    font-size: 35px;
+    color: var(--ColorTextoBoton);
+
+}
+
+.copy {
+    text-align: center;
+    color: rgb(182, 182, 182);
+    margin-top: 15px 0;
+    font-size: 20px;
+
+}
+
+.beneficios {
+    padding-top: var(--marginelementos);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-color: var(--ColorTextoBoton);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 30px;
+
+}
+
+/* Consultorios */
+
+.consultorios {
+    background-color: rgba(184, 184, 184, 0.067)
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: var(--marginelementos);
+
+}
+
+.contenedor-imagenes img {
+    display: block;
+    width: 20%;
+    box-shadow: 0 0 8px rgb(0, 0 ,0, .4);
+}
+
+/* Footer */
+
+.link-consulta {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.link-consulta:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+.redes-sociales i {
+    font-size: 30px;
+    padding: 0 20px;
+
+}
+
+.redes-sociales a {
+    color: var(--ColorTextoBoton);
+    text-decoration: none;
+    
+}
+
+.redes-sociales a:hover {
+    color: black;
+}
+
+@media screen and (max-width:800px) {
+    .menu_navegacion{
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .beneficio {
+        margin-bottom: 30px;
+    }
+
+    .contenedor-imagenes img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
